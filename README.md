@@ -17,9 +17,10 @@ How to Run
 
 For ex - *http://localhost:8000/api/playlists/playlists/1/*  returned on my system - 
 
+```json
 HTTP 200 OK
 Allow: GET, PUT, PATCH, HEAD, OPTIONS
-Content-Type: application/json
+Content - Type: application / json
 Vary: Accept
 
 {
@@ -28,3 +29,5 @@ Vary: Accept
     "likes": 10,
     "plays": 3
 }
+```
+
