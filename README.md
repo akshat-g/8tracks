@@ -4,9 +4,13 @@ Discovery Logic for Playlists based on the tags.
 How to Run
 ---------------
 1) unzip the downloaded file and cd into the main directory.
+
 2) create the virtual environment using command - virtualenv <name of the environment> 
+
 3) Activate the virtual environment using command - source <name of the environment>/bin/activate
+
 4) Install all the required packages by running command - pip install -r requirements.txt
+
 5) 
 
 
