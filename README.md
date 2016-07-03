@@ -11,16 +11,11 @@ How to Run
 
 4) Install all the required packages by running command - pip install -r requirements.txt
 
-5) 
 
 
+**Detail of any PlayList** can also be viewed via URL - *http://localhost:8000/api/playlists/playlists/<playlist_id>/* where playlist_id can be unique id of any playlist in the system. 
 
-
-
-
-Detail of any PlayList can also be viewed via URL - http://localhost:8000/api/playlists/playlists/<playlist_id>/ where playlist_id can be unique id of any playlist in the system. 
-
-For ex - http://localhost:8000/api/playlists/playlists/1/  returned on my system - 
+For ex - *http://localhost:8000/api/playlists/playlists/1/*  returned on my system - 
 
 HTTP 200 OK
 Allow: GET, PUT, PATCH, HEAD, OPTIONS
