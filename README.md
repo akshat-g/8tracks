@@ -28,8 +28,10 @@ How to Run
     }
     ```
     c) After updating mysql user and password sync the databases using command - python manage.py migrate
-    
-6) Now it's time to populate the database. I have created two extra APIs to post playlists and tags directly from the browser::
+
+6) Run the server by managemant command - python manage.py runserver
+
+7) Now it's time to populate the database. I have created two extra APIs to post playlists and tags directly from the browser::
 
     For Adding new PlayLists hit the API - localhost:8000/api/playlists/playlists/
     This API will list all the playlists in the system and one can also add new playlists into the system.
@@ -37,11 +39,11 @@ How to Run
     This API will list all the tags in the system and one can also add new tags into the system.
     
 
-7) I have kept the relationship between Tags and PlayLists as flexible. I did not define an end-point API for creating relationships between these. This can be done by inserting some entries into the *playlists_playlist_tags* in the tracks database as this table contains the entries for many to many relationship between Playlists and tags.
+8) I have kept the relationship between Tags and PlayLists as flexible. I did not define an end-point API for creating relationships between these. This can be done by inserting some entries into the *playlists_playlist_tags* in the tracks database as this table contains the entries for many to many relationship between Playlists and tags.
 
-8) IMPORTANT - Every time you add new Tag instances, you have to push Tag indices to the AWS instance by using management command - python manage.py update_index
+9) IMPORTANT - Every time you add new Tag instances, you have to push Tag indices to the AWS instance by using management command - python manage.py update_index
 
-9) For Search API - hit the URL ```http://localhost:8000/api/search/playlists/?q=<tag_name1><tag_name2>```.
+10) For Search API - hit the URL ```http://localhost:8000/api/search/playlists/?q=<tag_name1><tag_name2>```.
    For Ex. - ```http://localhost:8000/api/search/playlists/?q=poprock```. here pop and rock are the two tag_names. This API will return the lists of playlists based on relevancy and sorted on basis of configuration 'ORGANIZE_BY' parameter in settings.py.
 
 
