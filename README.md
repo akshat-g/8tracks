@@ -69,6 +69,6 @@ where tag\_id can be unique_id of any Tag in the system.
 
 **Methodology Used** - 
 
-I have used the concept of Elastic Search and exposing APIs using Haystack which is a library similar to django-rest-framework. Elastic search is used to do fast searching.
+I have used the concept of Elastic Search and exposing APIs using django-rest-framework. Elastic search is used to do fast searching.
 
 I have used a AWS Elastic search instance as a remote server for hosting elastic search. The index name is haystack and it stores the indices of Tag model. You can thus do a query search on thousand of tags.
